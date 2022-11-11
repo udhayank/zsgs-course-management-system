@@ -1,0 +1,45 @@
+------------------------------------------
+Course Management System - Class Structure
+------------------------------------------
+
+Admin
+	-- name 
+	-- id
+	-- password
+	-> viewCourse()
+	-> manageCourse() ?
+	-> addCourse()
+	-> assignTutor()
+	-> addStudent()
+	-> manageStudents() ?
+	-> addTutor()
+	-> manageTutors() ?
+	 
+Student
+	-- rollNo
+	-- name
+	-- semester
+	-- department
+	-- mailId
+	-- credits
+	-- currentCourseList
+	-- completedCourseList
+	-> enrollCourse()
+	-> exitCourse()
+
+Tutor
+	-- name
+	-- id
+	-- mailId
+	-- department
+	-- courseList
+	-> viewStudents()
+
+Course
+	-- courseId
+	-- courseName
+	-- department
+	-- semester
+	-- days
+	-- startTime
+	-- endTime
